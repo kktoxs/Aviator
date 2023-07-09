@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110dp"
+    android:layout_height="25dp"
+    android:background="@drawable/health"
+    android:paddingStart="30dp">
+
+  <ImageView
+      android:id="@+id/health1"
+      style="@style/HealthPoint"
+      android:src="@drawable/health_point01" />
+
+  <ImageView
+      android:id="@+id/health2"
+      style="@style/HealthPoint"
+      android:src="@drawable/health_point01" />
+
+  <ImageView
+      android:id="@+id/health3"
+      style="@style/HealthPoint"
+      android:src="@drawable/health_point01" />
+
+  <ImageView
+      android:id="@+id/health4"
+      style="@style/HealthPoint"
+      android:src="@drawable/health_point01" />
+
+  <ImageView
+      android:id="@+id/health5"
+      style="@style/HealthPoint"
+      android:src="@drawable/health_point02" />
+
+  <ImageView
+      android:id="@+id/health6"
+      style="@style/HealthPoint"
+      android:src="@drawable/health_point02" />
+
+  <ImageView
+      android:id="@+id/health7"
+      style="@style/HealthPoint"
+      android:src="@drawable/health_point02" />
+
+  <ImageView
+      android:id="@+id/health8"
+      style="@style/HealthPoint"
+      android:src="@drawable/health_point02" />
+
+  <ImageView
+      android:id="@+id/health9"
+      style="@style/HealthPoint"
+      android:src="@drawable/health_point03" />
+
+  <ImageView
+      android:id="@+id/health10"
+      style="@style/HealthPoint"
+      android:src="@drawable/health_point03" />
+
+  <ImageView
+      android:id="@+id/health11"
+      style="@style/HealthPoint"
+      android:src="@drawable/health_point03" />
+
+  <ImageView
+      android:id="@+id/health12"
+      style="@style/HealthPoint"
+      android:src="@drawable/health_point03" />
+
+
+</LinearLayout>

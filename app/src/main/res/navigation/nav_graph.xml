@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+  <action
+      android:id="@+id/toMenu"
+      app:destination="@id/menuFragment" />
+  <fragment
+      android:id="@+id/menuFragment"
+      android:name="com.example.aviator.MenuFragment"
+      android:label="fragment_menu"
+      tools:layout="@layout/fragment_menu">
+    <action
+        android:id="@+id/action_menuFragment_to_gameFragment"
+        app:destination="@id/gameFragment" />
+  </fragment>
+  <fragment
+      android:id="@+id/gameFragment"
+      android:name="com.example.aviator.GameFragment"
+      android:label="fragment_game"
+      tools:layout="@layout/fragment_game">
+    <action
+        android:id="@+id/action_gameFragment_to_gameOverFragment"
+        app:destination="@id/gameOverFragment"
+        app:popUpTo="@id/menuFragment" />
+  </fragment>
+  <fragment
+      android:id="@+id/gameOverFragment"
+      android:name="com.example.aviator.GameOverFragment"
+      android:label="fragment_game_over"
+      tools:layout="@layout/fragment_game_over" >
+    <argument
+        android:name="score"
+        app:argType="integer" />
+    <action
+        android:id="@+id/action_gameOverFragment_to_gameFragment"
+        app:destination="@id/gameFragment" />
+  </fragment>
+</navigation>

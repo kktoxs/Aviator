@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background05"
+    tools:context=".GameFragment">
+
+
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/blue"
+      android:elevation="10dp">
+
+    <include
+        android:id="@+id/topBar"
+        layout="@layout/top_bar" />
+  </FrameLayout>
+
+  <ImageView
+      android:id="@+id/small_medkit"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:src="@drawable/first_aid_kit_small"
+      tools:layout_gravity="bottom" />
+
+  <ImageView
+      android:id="@+id/big_medkit"
+      android:layout_width="80dp"
+      android:layout_height="50dp"
+      android:src="@drawable/first_aid_kit_big"
+      tools:layout_gravity="bottom|end" />
+
+  <ImageView
+      android:id="@+id/enemy_plane"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:layout_gravity="top|end"
+      android:src="@drawable/plane_enemy" />
+
+  <ImageView
+      android:id="@+id/enemy_bullet"
+      android:layout_width="30dp"
+      android:layout_height="30dp"
+      android:layout_gravity="bottom"
+      android:src="@drawable/bullet_enemy" />
+
+  <ImageView
+      android:id="@+id/bullet"
+      android:layout_width="30dp"
+      android:layout_height="30dp"
+      android:src="@drawable/bullet" />
+
+  <ImageView
+      android:id="@+id/plane"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:layout_gravity="center|bottom"
+      android:layout_marginBottom="70dp"
+      android:src="@drawable/plane" />
+
+</FrameLayout>

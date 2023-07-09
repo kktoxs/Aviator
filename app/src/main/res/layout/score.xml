@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/score_root"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:background="@drawable/text_box01">
+
+  <TextView
+      android:id="@+id/title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="80dp"
+      android:fontFamily="@font/rockwell_extra_bold"
+      android:gravity="center"
+      android:text="@string/plane_crashed"
+      android:textAllCaps="true"
+      android:textColor="@color/white"
+      android:textSize="20sp"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/rockwell_extra_bold"
+      android:text="@string/score"
+      android:textAllCaps="true"
+      android:textColor="@color/white"
+      android:textSize="20sp"
+      app:layout_constraintBottom_toTopOf="@id/score"
+      app:layout_constraintEnd_toEndOf="@id/score"
+      app:layout_constraintStart_toStartOf="@id/score" />
+
+  <TextView
+      android:id="@+id/score"
+      style="@style/ScoreText"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="200" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/rockwell_extra_bold"
+      android:gravity="center"
+      android:text="@string/would_you_like_to_play_again"
+      android:textAllCaps="true"
+      android:textColor="@color/white"
+      android:textSize="20sp"
+      app:layout_constraintBottom_toTopOf="@id/ok_button"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/score" />
+
+  <ImageButton
+      android:id="@+id/ok_button"
+      android:layout_width="70dp"
+      android:layout_height="60dp"
+      android:layout_margin="20dp"
+      android:background="@null"
+      android:scaleType="centerInside"
+      android:src="@drawable/ok"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="@id/guideline1" />
+
+  <ImageButton
+      android:id="@+id/close_button"
+      android:layout_width="70dp"
+      android:layout_height="60dp"
+      android:layout_margin="20dp"
+      android:background="@null"
+      android:scaleType="centerInside"
+      android:src="@drawable/close"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="@id/guideline1" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
